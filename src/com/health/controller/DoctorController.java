@@ -1,5 +1,9 @@
 package com.health.controller;
 
+import com.health.model.Doctor;
+import com.health.service.DoctorServiceImpl;
+import com.health.service.DoctorServices;
+
 public class DoctorController {
 	
 	public void viewAppointment()
@@ -37,6 +41,25 @@ public class DoctorController {
 	public static void main(String[] args) {
 		DoctorController doc=new DoctorController();
 		doc.viewAppointment();
+		
+		Doctor doctor=new Doctor();
+		doctor.setD_id(1001);
+		doctor.setName("Porus");
+		doctor.setProblem("Mouth Pain");
+		doctor.setTmeslot(10);
+		
+		DoctorServices doctorServices=new DoctorServiceImpl();
+		
+		doctorServices.saveDoctor(doctor);
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
