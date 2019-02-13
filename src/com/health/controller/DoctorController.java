@@ -22,7 +22,18 @@ public class DoctorController {
 		}
 		
 	}
-	
+	public void viewReports()
+	{
+		System.out.println("Reports As Per Paisents");
+		int count=1;
+		for(int i=1;i<=24;i++)
+		{
+			
+			System.out.println("-----Doctor "+i +" viewng Report ");
+				
+		}
+		
+	}
 	public static void main(String[] args) {
 		DoctorController doc=new DoctorController();
 		doc.viewAppointment();
